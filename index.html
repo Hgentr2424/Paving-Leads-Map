@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_457cec5d118d6e4cd7fce150a0baebf8 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_457cec5d118d6e4cd7fce150a0baebf8" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_457cec5d118d6e4cd7fce150a0baebf8 = L.map(
+                "map_457cec5d118d6e4cd7fce150a0baebf8",
+                {
+                    center: [35.0458, -85.3083],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 9,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c8bf93eac83e0482ac7d46c1f578439f = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_457cec5d118d6e4cd7fce150a0baebf8);
+        
+    
+            var marker_cluster_df7ba86c895363ea7f942878a446eb87 = L.markerClusterGroup(
+                {}
+            );
+            map_457cec5d118d6e4cd7fce150a0baebf8.addLayer(marker_cluster_df7ba86c895363ea7f942878a446eb87);
+        
+    
+            var marker_5da36f36abeedc457f99a7f6bc8a38df = L.marker(
+                [34.980957, -85.352013],
+                {}
+            ).addTo(marker_cluster_df7ba86c895363ea7f942878a446eb87);
+        
+    
+        var popup_7d223904c263c5cdbaa18cd0a63ef3cd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7c0046c88f032045391c573e7af94dcc = $(`<div id="html_7c0046c88f032045391c573e7af94dcc" style="width: 100.0%; height: 100.0%;">     <b>Residential Estate</b><br>     <b>Address:</b> Lookout Mountain, TN<br>     <b>Estimated Value:</b> $8,500<br>     <b>Issues:</b> Cracking, edge crumbling, faded sealant<br>     <b>Work:</b> Full resealing + edge repairs<br>     <b>Contact:</b> Martin L. (County Records)<br>     <b>Phone/Email:</b> Not publicly listed<br>     <a href="https://www.google.com/maps/place/34.980957,-85.352013" target="_blank">View on Google Maps</a>     </div>`)[0];
+            popup_7d223904c263c5cdbaa18cd0a63ef3cd.setContent(html_7c0046c88f032045391c573e7af94dcc);
+        
+
+        marker_5da36f36abeedc457f99a7f6bc8a38df.bindPopup(popup_7d223904c263c5cdbaa18cd0a63ef3cd)
+        ;
+
+        
+    
+    
+            var marker_b4cbe7c4cbea69665baa31c58e60214f = L.marker(
+                [35.136428, -85.236147],
+                {}
+            ).addTo(marker_cluster_df7ba86c895363ea7f942878a446eb87);
+        
+    
+        var popup_fe2c86fc814e4b13ef6d5525bd89f9db = L.popup({"maxWidth": "100%"});
+
+        
+            var html_402a8f44bbece3278dda7d0febbf389a = $(`<div id="html_402a8f44bbece3278dda7d0febbf389a" style="width: 100.0%; height: 100.0%;">     <b>Small Medical Plaza</b><br>     <b>Address:</b> Hixson, TN<br>     <b>Estimated Value:</b> $12,000<br>     <b>Issues:</b> Potholes, major cracking, ADA space faded<br>     <b>Work:</b> Milling + asphalt overlay, restriping<br>     <b>Contact:</b> Parkridge North<br>     <b>Phone/Email:</b> (423) 877-1100<br>     <a href="https://www.google.com/maps/place/35.136428,-85.236147" target="_blank">View on Google Maps</a>     </div>`)[0];
+            popup_fe2c86fc814e4b13ef6d5525bd89f9db.setContent(html_402a8f44bbece3278dda7d0febbf389a);
+        
+
+        marker_b4cbe7c4cbea69665baa31c58e60214f.bindPopup(popup_fe2c86fc814e4b13ef6d5525bd89f9db)
+        ;
+
+        
+    
+    
+            var marker_97968c69bf7900b9ac301ed2830e3075 = L.marker(
+                [35.066532, -85.059664],
+                {}
+            ).addTo(marker_cluster_df7ba86c895363ea7f942878a446eb87);
+        
+    
+        var popup_d9d762dcda0d02647c5f9de510d7e702 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d1ce751cf076feb0a171819ceae8a51d = $(`<div id="html_d1ce751cf076feb0a171819ceae8a51d" style="width: 100.0%; height: 100.0%;">     <b>Private Estate</b><br>     <b>Address:</b> Ooltewah, TN (The Legends)<br>     <b>Estimated Value:</b> $9,000<br>     <b>Issues:</b> Surface fractures, oxidation, poor drainage<br>     <b>Work:</b> Crack filling + sealcoating + leveling<br>     <b>Contact:</b> Hamilton County GIS<br>     <b>Phone/Email:</b> Not publicly listed<br>     <a href="https://www.google.com/maps/place/35.066532,-85.059664" target="_blank">View on Google Maps</a>     </div>`)[0];
+            popup_d9d762dcda0d02647c5f9de510d7e702.setContent(html_d1ce751cf076feb0a171819ceae8a51d);
+        
+
+        marker_97968c69bf7900b9ac301ed2830e3075.bindPopup(popup_d9d762dcda0d02647c5f9de510d7e702)
+        ;
+
+        
+    
+    
+            var marker_ceacc79733df1924203fd515ca91938b = L.marker(
+                [34.922711, -85.112419],
+                {}
+            ).addTo(marker_cluster_df7ba86c895363ea7f942878a446eb87);
+        
+    
+        var popup_bcfb128b9273a950d3b318276940ba54 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dd8e68b7d08013868bf8f97690d817be = $(`<div id="html_dd8e68b7d08013868bf8f97690d817be" style="width: 100.0%; height: 100.0%;">     <b>Event Venue</b><br>     <b>Address:</b> Ringgold, GA<br>     <b>Estimated Value:</b> $18,000<br>     <b>Issues:</b> Surface fatigue, vegetation growth in seams<br>     <b>Work:</b> Full resurface + restripe<br>     <b>Contact:</b> Georgia Winery Event Hall<br>     <b>Phone/Email:</b> (706) 937-9463<br>     <a href="https://www.google.com/maps/place/34.922711,-85.112419" target="_blank">View on Google Maps</a>     </div>`)[0];
+            popup_bcfb128b9273a950d3b318276940ba54.setContent(html_dd8e68b7d08013868bf8f97690d817be);
+        
+
+        marker_ceacc79733df1924203fd515ca91938b.bindPopup(popup_bcfb128b9273a950d3b318276940ba54)
+        ;
+
+        
+    
+    
+            var marker_2de562f628425b5aa7c752e51264504a = L.marker(
+                [35.129786, -85.332583],
+                {}
+            ).addTo(marker_cluster_df7ba86c895363ea7f942878a446eb87);
+        
+    
+        var popup_ace6108ac66c9a204fc801f043ec6fc1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a823c131968a68730199ea90bf1ba94a = $(`<div id="html_a823c131968a68730199ea90bf1ba94a" style="width: 100.0%; height: 100.0%;">     <b>Estate Driveway</b><br>     <b>Address:</b> Signal Mountain, TN<br>     <b>Estimated Value:</b> $10,500<br>     <b>Issues:</b> Alligator cracking, fading, water pooling<br>     <b>Work:</b> Remove + replace upper section, reseal<br>     <b>Contact:</b> Private (County Records)<br>     <b>Phone/Email:</b> Not publicly listed<br>     <a href="https://www.google.com/maps/place/35.129786,-85.332583" target="_blank">View on Google Maps</a>     </div>`)[0];
+            popup_ace6108ac66c9a204fc801f043ec6fc1.setContent(html_a823c131968a68730199ea90bf1ba94a);
+        
+
+        marker_2de562f628425b5aa7c752e51264504a.bindPopup(popup_ace6108ac66c9a204fc801f043ec6fc1)
+        ;
+
+        
+    
+    
+            var marker_a2c0065a045e6cd61b5822d7633c4687 = L.marker(
+                [34.9745, -85.3516],
+                {}
+            ).addTo(marker_cluster_df7ba86c895363ea7f942878a446eb87);
+        
+    
+        var popup_738b0bab0f4c0f83a813e38560813739 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_94e181408758c07c84acb427bdfaa77c = $(`<div id="html_94e181408758c07c84acb427bdfaa77c" style="width: 100.0%; height: 100.0%;">     <b>Luxury Home</b><br>     <b>Address:</b> 130 North Forest Avenue, Lookout Mountain, GA 30750<br>     <b>Estimated Value:</b> $9,500<br>     <b>Issues:</b> Edge wear, oxidation<br>     <b>Work:</b> Full reseal + crack repair<br>     <b>Contact:</b> Walker County Records<br>     <b>Phone/Email:</b> Not listed<br>     <a href="https://www.google.com/maps/place/130+N+Forest+Ave,+Lookout+Mountain,+GA+30750" target="_blank">View on Google Maps</a>     </div>`)[0];
+            popup_738b0bab0f4c0f83a813e38560813739.setContent(html_94e181408758c07c84acb427bdfaa77c);
+        
+
+        marker_a2c0065a045e6cd61b5822d7633c4687.bindPopup(popup_738b0bab0f4c0f83a813e38560813739)
+        ;
+
+        
+    
+    
+            var marker_77e06f3a26c4f23d2ec83bdf2d226afe = L.marker(
+                [35.0345, -85.1593],
+                {}
+            ).addTo(marker_cluster_df7ba86c895363ea7f942878a446eb87);
+        
+    
+        var popup_e86297e7aad8f6741da9e82d1f37a1d4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9162dde7ecc8dd6a75bce9f21f71f791 = $(`<div id="html_9162dde7ecc8dd6a75bce9f21f71f791" style="width: 100.0%; height: 100.0%;">     <b>Office Park</b><br>     <b>Address:</b> 7423 Shallowford Road, Chattanooga, TN 37421<br>     <b>Estimated Value:</b> $14,000<br>     <b>Issues:</b> Potholes, wear near loading zone<br>     <b>Work:</b> Resurface + restriping<br>     <b>Contact:</b> Shallowford Commons<br>     <b>Phone/Email:</b> (423) 894-9433<br>     <a href="https://www.google.com/maps/place/7423+Shallowford+Rd,+Chattanooga,+TN+37421" target="_blank">View on Google Maps</a>     </div>`)[0];
+            popup_e86297e7aad8f6741da9e82d1f37a1d4.setContent(html_9162dde7ecc8dd6a75bce9f21f71f791);
+        
+
+        marker_77e06f3a26c4f23d2ec83bdf2d226afe.bindPopup(popup_e86297e7aad8f6741da9e82d1f37a1d4)
+        ;
+
+        
+    
+    
+            var marker_3bfb37513e533585d3830775f70c3b5c = L.marker(
+                [35.1786, -84.8899],
+                {}
+            ).addTo(marker_cluster_df7ba86c895363ea7f942878a446eb87);
+        
+    
+        var popup_6e99c00c325ba13a598cb005121a2dba = L.popup({"maxWidth": "100%"});
+
+        
+            var html_54f4444e2e1d4ace813970e87daeb0f0 = $(`<div id="html_54f4444e2e1d4ace813970e87daeb0f0" style="width: 100.0%; height: 100.0%;">     <b>Estate Drive</b><br>     <b>Address:</b> 3312 Glenwood Drive NW, Cleveland, TN 37312<br>     <b>Estimated Value:</b> $11,000<br>     <b>Issues:</b> Cracks, water pooling<br>     <b>Work:</b> Partial removal + reseal<br>     <b>Contact:</b> Bradley County GIS<br>     <b>Phone/Email:</b> Not listed<br>     <a href="https://www.google.com/maps/place/3312+Glenwood+Dr+NW,+Cleveland,+TN+37312" target="_blank">View on Google Maps</a>     </div>`)[0];
+            popup_6e99c00c325ba13a598cb005121a2dba.setContent(html_54f4444e2e1d4ace813970e87daeb0f0);
+        
+
+        marker_3bfb37513e533585d3830775f70c3b5c.bindPopup(popup_6e99c00c325ba13a598cb005121a2dba)
+        ;
+
+        
+    
+    
+            var marker_2bae833d5c93fd4842ae614e2123fe4a = L.marker(
+                [34.7877, -84.9666],
+                {}
+            ).addTo(marker_cluster_df7ba86c895363ea7f942878a446eb87);
+        
+    
+        var popup_e99cb560c53bc38ef0254cc60e09fe00 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_01cf53358275a79fc98336458688da91 = $(`<div id="html_01cf53358275a79fc98336458688da91" style="width: 100.0%; height: 100.0%;">     <b>Church Parking Lot</b><br>     <b>Address:</b> 901 W N Commons Dr NE, Dalton, GA 30721<br>     <b>Estimated Value:</b> $17,000<br>     <b>Issues:</b> Full lot cracking, potholes<br>     <b>Work:</b> Milling + new asphalt + ADA striping<br>     <b>Contact:</b> Northminster Presbyterian Church<br>     <b>Phone/Email:</b> (706) 278-2526<br>     <a href="https://www.google.com/maps/place/901+W+N+Commons+Dr+NE,+Dalton,+GA+30721" target="_blank">View on Google Maps</a>     </div>`)[0];
+            popup_e99cb560c53bc38ef0254cc60e09fe00.setContent(html_01cf53358275a79fc98336458688da91);
+        
+
+        marker_2bae833d5c93fd4842ae614e2123fe4a.bindPopup(popup_e99cb560c53bc38ef0254cc60e09fe00)
+        ;
+
+        
+    
+    
+            var marker_2d74f342b65ddcc942dd5e57abbb2b53 = L.marker(
+                [35.1421, -85.3445],
+                {}
+            ).addTo(marker_cluster_df7ba86c895363ea7f942878a446eb87);
+        
+    
+        var popup_a3f77f7822a3123b6d3e2cb014fde3e2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d0fefdde69b96edf190d8265f80a66ed = $(`<div id="html_d0fefdde69b96edf190d8265f80a66ed" style="width: 100.0%; height: 100.0%;">     <b>Private Home</b><br>     <b>Address:</b> 1625 Shackleford Ridge Rd, Signal Mountain, TN 37377<br>     <b>Estimated Value:</b> $8,000<br>     <b>Issues:</b> Spalling, cracks, drain wear<br>     <b>Work:</b> Crack fill, overlay, reseal<br>     <b>Contact:</b> Private (Hamilton County)<br>     <b>Phone/Email:</b> Not listed<br>     <a href="https://www.google.com/maps/place/1625+Shackleford+Ridge+Rd,+Signal+Mountain,+TN+37377" target="_blank">View on Google Maps</a>     </div>`)[0];
+            popup_a3f77f7822a3123b6d3e2cb014fde3e2.setContent(html_d0fefdde69b96edf190d8265f80a66ed);
+        
+
+        marker_2d74f342b65ddcc942dd5e57abbb2b53.bindPopup(popup_a3f77f7822a3123b6d3e2cb014fde3e2)
+        ;
+
+        
+    
+    
+            var marker_3518a2df857a4ca9801562101cdbc193 = L.marker(
+                [34.9825, -85.2942],
+                {}
+            ).addTo(marker_cluster_df7ba86c895363ea7f942878a446eb87);
+        
+    
+        var popup_ef7d9da9fd4d56d85c536a4c41bedc01 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b618fff33624a573efcda43b5d8d6266 = $(`<div id="html_b618fff33624a573efcda43b5d8d6266" style="width: 100.0%; height: 100.0%;">     <b>Warehouse Lot</b><br>     <b>Address:</b> 1735 McFarland Ave, Rossville, GA 30741<br>     <b>Estimated Value:</b> $13,500<br>     <b>Issues:</b> Rutting, semi damage, entrance degradation<br>     <b>Work:</b> Patching, resurfacing, new striping<br>     <b>Contact:</b> Southern Wholesale Flooring<br>     <b>Phone/Email:</b> (706) 866-3444<br>     <a href="https://www.google.com/maps/place/1735+McFarland+Ave,+Rossville,+GA+30741" target="_blank">View on Google Maps</a>     </div>`)[0];
+            popup_ef7d9da9fd4d56d85c536a4c41bedc01.setContent(html_b618fff33624a573efcda43b5d8d6266);
+        
+
+        marker_3518a2df857a4ca9801562101cdbc193.bindPopup(popup_ef7d9da9fd4d56d85c536a4c41bedc01)
+        ;
+
+        
+    
+    
+            var marker_475cde5dfde0d457a5e030a9c7dca0f2 = L.marker(
+                [35.1524, -85.0803],
+                {}
+            ).addTo(marker_cluster_df7ba86c895363ea7f942878a446eb87);
+        
+    
+        var popup_2ab07fa58f78bcb2e806a1c4b5d113bf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a9ae352806def435df9e86f216e66232 = $(`<div id="html_a9ae352806def435df9e86f216e66232" style="width: 100.0%; height: 100.0%;">     <b>Estate Lot</b><br>     <b>Address:</b> 6516 Harrison Cemetery Rd, Harrison, TN 37341<br>     <b>Estimated Value:</b> $10,000<br>     <b>Issues:</b> Sloped asphalt, washout, spider cracking<br>     <b>Work:</b> Sub-base repair + repave + drainage<br>     <b>Contact:</b> Hamilton County Assessor<br>     <b>Phone/Email:</b> Not publicly listed<br>     <a href="https://www.google.com/maps/place/6516+Harrison+Cemetery+Rd,+Harrison,+TN+37341" target="_blank">View on Google Maps</a>     </div>`)[0];
+            popup_2ab07fa58f78bcb2e806a1c4b5d113bf.setContent(html_a9ae352806def435df9e86f216e66232);
+        
+
+        marker_475cde5dfde0d457a5e030a9c7dca0f2.bindPopup(popup_2ab07fa58f78bcb2e806a1c4b5d113bf)
+        ;
+
+        
+    
+    
+            var marker_0ec435b6d9ca810c11ed78f31b9ae90e = L.marker(
+                [35.1257, -84.8576],
+                {}
+            ).addTo(marker_cluster_df7ba86c895363ea7f942878a446eb87);
+        
+    
+        var popup_762eff8f5cb6c39464c5659db715da74 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6cae81aa6329f74beaa50376cc770712 = $(`<div id="html_6cae81aa6329f74beaa50376cc770712" style="width: 100.0%; height: 100.0%;">     <b>Boutique Retail Strip</b><br>     <b>Address:</b> 2410 Treasury Drive SE, Cleveland, TN 37323<br>     <b>Estimated Value:</b> $15,000<br>     <b>Issues:</b> Asphalt wear, no ADA compliance, worn striping<br>     <b>Work:</b> Full resurfacing + restriping + ADA paint<br>     <b>Contact:</b> Fairview Properties LLC<br>     <b>Phone/Email:</b> (423) 472-7264<br>     <a href="https://www.google.com/maps/place/2410+Treasury+Dr+SE,+Cleveland,+TN+37323" target="_blank">View on Google Maps</a>     </div>`)[0];
+            popup_762eff8f5cb6c39464c5659db715da74.setContent(html_6cae81aa6329f74beaa50376cc770712);
+        
+
+        marker_0ec435b6d9ca810c11ed78f31b9ae90e.bindPopup(popup_762eff8f5cb6c39464c5659db715da74)
+        ;
+
+        
+    
+    
+            var marker_e67f547ebb64270c35e206d5b5979daa = L.marker(
+                [35.0163, -85.0179],
+                {}
+            ).addTo(marker_cluster_df7ba86c895363ea7f942878a446eb87);
+        
+    
+        var popup_c8dac9b45f06ee6e9a2fbffb3faa9bda = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9e6892d907e57ebc7d0a0baf06cb5c73 = $(`<div id="html_9e6892d907e57ebc7d0a0baf06cb5c73" style="width: 100.0%; height: 100.0%;">     <b>Estate Lot</b><br>     <b>Address:</b> 10730 London Ln, Apison, TN 37302<br>     <b>Estimated Value:</b> $9,000<br>     <b>Issues:</b> Circle driveway, root cracks, oxidation<br>     <b>Work:</b> Seal, edge crack repair<br>     <b>Contact:</b> Hamilton County Parcel Lookup<br>     <b>Phone/Email:</b> Not listed<br>     <a href="https://www.google.com/maps/place/10730+London+Ln,+Apison,+TN+37302" target="_blank">View on Google Maps</a>     </div>`)[0];
+            popup_c8dac9b45f06ee6e9a2fbffb3faa9bda.setContent(html_9e6892d907e57ebc7d0a0baf06cb5c73);
+        
+
+        marker_e67f547ebb64270c35e206d5b5979daa.bindPopup(popup_c8dac9b45f06ee6e9a2fbffb3faa9bda)
+        ;
+
+        
+    
+</script>
+</html>
